@@ -44,7 +44,7 @@ const LoadingFallback = () => (
 // Main router configuration with outlet's children and errorElement for 404
 const router = createBrowserRouter([
   {
-    path: "/", // root route for App
+    path: "/Youtube-Frontend/", // root route for App
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <App />
