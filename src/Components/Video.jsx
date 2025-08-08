@@ -5,7 +5,7 @@ import { formatDistanceToNow } from 'date-fns';
 function Video({ _id, title, channel, views, thumbnail, uploadDate }) {
   return (
     <div className="w-full">
-      <Link to={`/Video/${_id}`}>
+      <Link to={`/Youtube-Frontend/Video/${_id}`}>
         <img
           src={thumbnail}
           alt={title}
@@ -15,7 +15,7 @@ function Video({ _id, title, channel, views, thumbnail, uploadDate }) {
 
       <div className="flex gap-3 mt-3">
         {/* Channel Icon */}
-        <Link to={`/channels/${channel._id}`}>
+        <Link to={`/Youtube-Frontend/channels/${channel._id}`}>
           <img
             src={channel.channelPic}
             alt={channel.channelName}
@@ -26,7 +26,7 @@ function Video({ _id, title, channel, views, thumbnail, uploadDate }) {
         <div className="flex flex-col overflow-hidden">
           {/* Video Title */}
           <Link
-            to={`/Video/${_id}`}
+            to={`/Youtube-Frontend/Video/${_id}`}
             className="text-sm sm:text-base font-medium text-black dark:text-white hover:text-red-600 truncate"
           >
             {title}
@@ -34,7 +34,7 @@ function Video({ _id, title, channel, views, thumbnail, uploadDate }) {
 
           {/* Channel Name */}
           <Link
-            to={`/channels/${channel._id}`}
+            to={`/Youtube-Frontend/channels/${channel._id}`}
             className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 hover:underline truncate"
           >
             {channel.channelName}

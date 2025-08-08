@@ -306,7 +306,7 @@ function VideoPlayer() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b pb-4 mb-4">
             <div className="flex items-center gap-4">
               {/* Channel pic */}
-              <Link to={`/channels/${video?.channel?._id}`}>
+              <Link to={`/Youtube-Frontend/channels/${video?.channel?._id}`}>
                 <img
                   src={video.channel?.channelPic}
                   alt={video.channel?.channelName}
@@ -316,7 +316,7 @@ function VideoPlayer() {
 
               {/* Channel name & subscribers */}
               <Link
-                to={`/channels/${video?.channel?._id}`}
+                to={`/Youtube-Frontend/channels/${video?.channel?._id}`}
                 className="flex flex-col"
               >
                 <span className="text-sm font-medium text-black dark:text-white">
@@ -570,7 +570,7 @@ function VideoPlayer() {
           .slice(0, 10)
           .map((v) => (
             <Link
-              to={`/video/${v._id}`}
+              to={`/Youtube-Frontend/video/${v._id}`}
               key={v._id}
               className="flex items-start gap-3 hover:bg-gray-100 dark:hover:bg-neutral-800 p-2 rounded-md transition"
             >

@@ -30,7 +30,7 @@ function Login() {
       );
 
       setUser(data);
-      navigate('/');
+      navigate('/Youtube-Frontend/');
     } catch (err) {
       console.error('❌ Login failed:', err.response?.data?.message || err.message);
       alert('Login failed: ' + (err.response?.data?.message || 'Something went wrong'));
@@ -89,7 +89,7 @@ function Login() {
           Don't have an account?{' '}
           <span
             className="text-red-600 font-medium cursor-pointer hover:underline"
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/Youtube-Frontend/register')}
           >
             Sign up
           </span>

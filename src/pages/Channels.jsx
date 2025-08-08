@@ -13,7 +13,7 @@ function Channels() {
     const { user } = useAuth();
     const navigate = useNavigate();
 
-    if (user?.channelId === id) navigate("/channel");
+    if (user?.channelId === id) navigate("/Youtube-Frontend/channel");
 
     useEffect(() => {
         setLoading(true);
@@ -100,7 +100,7 @@ function Channels() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
                 {(channel.videos || []).map(video => (
                     <div key={video._id} className="flex flex-col">
-                        <Link to={`/video/${video._id}`}>
+                        <Link to={`/Youtube-Frontend/video/${video._id}`}>
                             <img
                                 src={video.thumbnail}
                                 alt={video.title}

@@ -13,12 +13,12 @@ function UserModal({ onClose, setShowModal }) {
   const navigate = useNavigate();
 
   const handleViewChannel = () => {
-    navigate("/channel");
+    navigate("/Youtube-Frontend/channel");
     setShowModal(false);
   };
 
   const handleCreateChannel = () => {
-    navigate("/createChannel");
+    navigate("/Youtube-Frontend/createChannel");
     setShowModal(false);
   };
 
@@ -26,7 +26,7 @@ function UserModal({ onClose, setShowModal }) {
     localStorage.removeItem('user');
     setUser(null);
     setShowModal(false);
-    navigate("/");
+    navigate("/Youtube-Frontend/");
   };
 
   return (

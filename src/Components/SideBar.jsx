@@ -43,7 +43,7 @@ const SideBar = ({ sidebarOpen }) => {
     >
       {/* Main Section */}
       <div className="space-y-2">
-        <Link to="/" className={itemClass}>
+        <Link to="/Youtube-Frontend/" className={itemClass}>
           <IoMdHome size={20} className="shrink-0" />
           {sidebarOpen && <span>Home</span>}
         </Link>

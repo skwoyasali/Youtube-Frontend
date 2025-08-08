@@ -323,7 +323,7 @@ function YourChannel() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 shadow-lg">
           {videos.map((video) => (
             <div key={video._id} className="relative">
-              <Link to={`/video/${video._id}`}>
+              <Link to={`/Youtube-Frontend/video/${video._id}`}>
                 <img
                   src={video.thumbnail}
                   alt={video.title}

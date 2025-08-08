@@ -61,7 +61,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/video/:videoId",
+    path: "video/:videoId",
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <VideoPlayer />
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/register",
+    path: "register",
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <Register />
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/login",
+    path: "login",
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <Login />
@@ -85,7 +85,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/createChannel",
+    path: "createChannel",
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <CreateChannel />
@@ -93,7 +93,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/channel",
+    path: "channel",
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <Channel />
@@ -101,7 +101,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/channels/:id",
+    path: "channels/:id",
     element: (
       <Suspense fallback={<LoadingFallback />}>
         <Channels />

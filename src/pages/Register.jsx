@@ -45,7 +45,7 @@ function Register() {
       );
 
       alert('✅ User registered successfully, please login.');
-      navigate('/login');
+      navigate('/Youtube-Frontend/login');
     } catch (err) {
       console.error('❌ Registration failed:', err.response?.data?.message || err.message);
       alert('Registration failed: ' + (err.response?.data?.message || 'Something went wrong'));
@@ -139,7 +139,7 @@ function Register() {
           Already have an account?{' '}
           <span
             className="text-red-600 font-medium cursor-pointer hover:underline"
-            onClick={() => navigate('/login')}
+            onClick={() => navigate('/Youtube-Frontend/login')}
           >
             Sign in
           </span>

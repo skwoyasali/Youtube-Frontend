@@ -208,7 +208,7 @@ function Header({
           >
             <RxHamburgerMenu />
           </button>
-          <Link to="/" className="flex items-center gap-1 pr-1">
+          <Link to="/Youtube-Frontend/" className="flex items-center gap-1 pr-1">
             <img
               src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
               alt="YouTube"
@@ -302,7 +302,7 @@ function Header({
           ) : (
             <div className="flex items-center gap-1 sm:gap-2">
               <Link
-                to="/login"
+                to="/Youtube-Frontend/login"
                 className="text-xs sm:text-sm font-medium px-2 py-0.5 sm:px-6 sm:py-1.5 rounded-full border border-blue-600 text-blue-700 hover:bg-blue-300 transition"
               >
                 Sign in

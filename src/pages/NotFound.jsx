@@ -19,7 +19,7 @@ function NotFound() {
 
       {/* Home Link */}
       <Link
-        to="/"
+        to="/Youtube-Frontend/"
         className="px-5 py-2.5 bg-red-600 text-white rounded-full hover:bg-red-700 transition text-sm sm:text-base font-medium"
       >
         Go to YouTube Home

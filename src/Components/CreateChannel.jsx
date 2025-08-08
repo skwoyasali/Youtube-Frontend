@@ -50,7 +50,7 @@ function CreateChannel() {
 
       setUser({ ...user, channelId: data.channelId || data._id });
       alert("Channel created!");
-      navigate("/channel");
+      navigate("/Youtube-Frontend/channel");
     } catch (err) {
       alert("Failed to create channel: " + (err.response?.data?.message || err.message));
     } finally {
